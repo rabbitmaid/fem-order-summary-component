@@ -32,5 +32,117 @@
     --verypaleblue: hsl(225, 100%, 98%);
     --desaturatedblue: hsl(224, 23%, 55%);
     --darkblue: hsl(223, 47%, 23%);
+    --white: hsl(0, 0%, 100%);
 
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: var(--text-base);
+    font-weight: var(--font-normal);
+}
+
+
+main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--paleblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: var(--text-base);
+}
+
+section {
+    background-color: var(--white);
+    width: 453px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--desaturatedblue);
+}
+
+section h1,
+section h2 {
+    color: var(--darkblue);
+    font-weight: var(--font-bold);
+}
+
+section > img.hero {
+    width: 100%;
+}
+
+section > div.content {
+    padding: 10px 50px;
+}
+
+section h1,
+section p.description {
+    margin-bottom: 20px;
+}
+
+section div.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--verypaleblue);
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+section div.summary div.plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+section div.summary div.plan div.price {
+    text-align: start;
+    margin-left: 15px;
+}
+
+section div.summary a {
+    color: var(--brightblue);
+    font-weight: var(--font-bold);
+}
+
+section div.summary a:hover{
+    color: var(--desaturatedblue);
+    text-decoration: none;
+}
+
+/* Reset for button tag */
+button {
+    display: block;
+    font-family: "Red Hat Display", sans-serif;
+    width: 100%;
+    padding: 15px 10px;
+    border:none;
+    font-weight: var(--font-bold);
+    background-color: var(--verypaleblue);
+    font-size: var(--text-base);
+    cursor: pointer;
+}
+
+.btn-order {
+    background-color: var(--brightblue);
+    color: var(--verypaleblue);
+    border-radius: 8px;
+}
+
+.btn-order:hover{
+    background-color: var(--desaturatedblue);
+}
+
+.btn-cancel {
+    color: var(--desaturatedblue);
+}
+
+.btn-cancel:hover{
+    color: var(--darkblue);
 }
