@@ -124,7 +124,7 @@ button {
     padding: 15px 10px;
     border:none;
     font-weight: var(--font-bold);
-    background-color: var(--verypaleblue);
+    background-color: var(--white);
     font-size: var(--text-base);
     cursor: pointer;
 }
@@ -133,6 +133,8 @@ button {
     background-color: var(--brightblue);
     color: var(--verypaleblue);
     border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 10px 5px var(--paleblue);
 }
 
 .btn-order:hover{
