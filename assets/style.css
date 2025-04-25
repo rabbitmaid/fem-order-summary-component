@@ -1,0 +1,36 @@
+/* Browser reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import fonts */
+
+@font-face {
+    font-family: "Red Hat Display";
+    src: url("./fonts/RedHatDisplay-VariableFont_wght.ttf");
+}
+
+/* Custom properties */
+
+:root {
+
+    --text-base: 16px;
+    --font-normal: 500;
+    --font-medium: 700;
+    --font-bold: 900;
+
+    /* Primary Colors */
+    --paleblue: hsl(225, 100%, 94%);
+    --brightblue: hsl(245, 75%, 52%);
+
+    /* Neutral Colors */
+    --verypaleblue: hsl(225, 100%, 98%);
+    --desaturatedblue: hsl(224, 23%, 55%);
+    --darkblue: hsl(223, 47%, 23%);
+
+}
